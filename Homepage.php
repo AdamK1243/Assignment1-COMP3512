@@ -118,8 +118,7 @@
         <p id="copyright">©Kapoor, Kovas</p>
         <div class="Github">
             <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src= "icons/git.png" alt= "git icon"/></a></li>
-            <a href="https://github.com/Spencerreids">Spencer's github</a>
-            <a href="https://github.com/mlind423">Matthew's github</a>
+            <
         </div>
     </footer>
 </body>

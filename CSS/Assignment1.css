@@ -212,12 +212,6 @@ tr:nth-child(even) {
 }
 img{height: 30px; width: 30px; margin-right: -20px;}
 /* Apply styles to the main content area */
-body {
-    background-color: #f2f2f2;
-    font-family: Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
-}
 
 .content{
     padding-top: 144px;
