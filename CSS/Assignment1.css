@@ -1,0 +1,263 @@
+:root{
+    --background-image: url("../image/ZenBG-1.png"), url("../image/ZenBG-2.png");
+    --background-repeat: repeat-x, repeat;
+   
+}
+body{
+    min-width: 100%;
+    display: block;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: Helvetica, Sans-Serif;
+    margin: 0px;
+    background-image: url("../image/ZenBG-1.png"), url("../image/ZenBG-2.png");
+    background-repeat: repeat-x, repeat;
+}nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Remove default list padding */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px; /* Reduce the margin to prevent overlap */
+    padding: 5px; /* Add padding to create space within each list item */
+}
+
+nav li img {
+    vertical-align: middle; /* Vertically align the icon with the text */
+    margin-right: 5px; /* Add right margin to separate the icon from the text */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 224, 224);
+}
+
+header {
+    text-align: center;
+    color: rgb(216, 44, 44);
+    padding-top: 100px; /* Add padding to push content down */
+    background-image: url('../image/test04.jpeg'); /* Replace with your header image */
+    background-size: cover; /* Adjust the background size as needed */
+}
+
+
+header a:visited{
+    color: white;
+}
+header a:link{
+    color: white;
+}
+header a:hover{
+    background-color: #7D3C98;
+}
+a.favorites{
+    background-color: var(--CurrentPage);
+}
+a.browser{
+    background-color: var(--CurrentPage);
+}
+a.search{
+    background-color: var(--CurrentPage);
+}
+a.song{
+    background-color: var(--CurrentPage);
+}
+a.home{
+    background-color: var(--CurrentPage);
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--HeaderFooter);
+    color: white;
+    margin: auto;
+
+}
+footer>*{
+    margin-left: 10px;
+}
+.Github{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+footer a{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px;
+    border: 1px var(--HeaderFooter);
+    background-color: var(--HeaderFooter);
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border-radius: 5%;
+}
+footer a:visited{
+    color: white;
+}
+footer a:link{
+    color: white;
+}
+footer a:hover{
+    background-color: #7D3C98;
+}
+
+.content{
+    padding-top: 144px;
+    padding-bottom: 175px;
+}
+tr:nth-child(even) {
+    background-color: rgba(63, 63, 63, 0.35);
+}
+
+.home_container{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    
+}
+.homepage_grid{
+    background-color: rgb(53, 55, 57);
+   
+    min-width: 200px;
+    max-height: 650px;
+    padding-left: 2%;
+    padding-right: 2%; 
+    box-shadow: 4px 8px 16px -3px rgba(0,0,0,0.76);
+}
+.homepage_grid > ul > li{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: rgb(239, 255, 252);
+    font-weight: bolder;
+    font-size: medium;
+}
+.homepage_grid a:link{
+    color: white;
+}
+.homepage_grid a:visited{
+    color: mediumslateblue ;
+}
+.homepage_grid a:hover{
+    background-color: black;
+}
+.homepage_grid.top-genres {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px); /* Adjust the blur amount as needed */
+}
+.homepage_grid.top-artist {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px);
+}
+.homepage_grid.top-songs {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px);
+}
+.homepage_grid.one-hit {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px);
+}
+.homepage_grid.long {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px);
+}
+.homepage_grid.club {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px);
+}
+.homepage_grid.run {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px);
+
+}
+.homepage_grid.study {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px);
+}
+.grid-list {
+    list-style: none;
+}
+.grid-1.blur-item{
+    font-size: 18px; /* Customize the font size for the first grid */
+    color: #060505; /* Customize the color for the first grid */
+    /* Add other styles as needed */
+}
+.blur-text {
+    background-color: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background for better readability */
+    color: rgb(219, 35, 35); /* Adjust text color as needed */
+    padding: 10px; /* Add padding for better text readability */
+}
+
+.Github{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+img{height: 30px; width: 30px; margin-right: -20px;}
+/* Apply styles to the main content area */
+
+.content{
+    padding-top: 144px;
+    padding-bottom: 175px;
+}
+tr:nth-child(even) {
+    background-color: rgba(63, 63, 63, 0.35);
+}
+table, td, th {
+    /* border: 1px solid; */
+    padding: 20px;
+    font-size: 1.05rem;
+} 
+table{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+}
+.table_year{
+    width: 60px;
+    margin-left: 3px;
+}
+.songInfo{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+.songInfo tr{
+    background-color: var(--Background);
+}
+.songInfo a:hover{
+    background-color: #7D3C98;
+}
+div.progress{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: var(--Background);
+    text-align:center;
+}
+progress{
+    width: 75%;
+}
+.progress label{
+    padding: 40px;
+}

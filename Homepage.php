@@ -1,6 +1,11 @@
 <?php
+<<<<<<< HEAD
     require_once 'config.inc.php'; 
     require_once 'db-classes.inc.php';
+=======
+    require_once 'Include/config.inc.php'; 
+    require_once 'Include/db-classes.inc.php';
+>>>>>>> c56f7bf5545efdd9d66cbb949f2bef9d3399223a
     
     try{
         $conn = Databasehelper::createConnection(array(DBCONNSTRING,DBUSER,DBPASS));
@@ -31,8 +36,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="CSS/Homepage.css">
     <link rel="stylesheet" href="CSS/Main.css">
+=======
+    <link rel="stylesheet" href="CSS/Assignment1.css">
+  
+>>>>>>> c56f7bf5545efdd9d66cbb949f2bef9d3399223a
     <title>Document</title>
     
 </head>
@@ -118,6 +128,10 @@
         <p id="copyright">©Kapoor, Kovas</p>
         <div class="Github">
             <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src= "icons/git.png" alt= "git icon"/></a></li>
+<<<<<<< HEAD
+=======
+            <
+>>>>>>> c56f7bf5545efdd9d66cbb949f2bef9d3399223a
         </div>
     </footer>
 </body>
