@@ -1,0 +1,47 @@
+/* Apply styles to the 'header' element */
+header {
+    text-align: center;
+    color: rgb(216, 44, 44);
+    padding-top: 100px; /* Add padding to push content down */
+    background-image: url('../image/your-header-image.jpg'); /* Replace with your header image */
+    background-size: cover; /* Adjust the background size as needed */
+}
+
+/* Apply styles to the 'nav' element and move it to the top right */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Remove default list padding */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px; /* Reduce the margin to prevent overlap */
+    padding: 5px; /* Add padding to create space within each list item */
+}
+
+nav li img {
+    vertical-align: middle; /* Vertically align the icon with the text */
+    margin-right: 5px; /* Add right margin to separate the icon from the text */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 224, 224);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #05592f;
+    background-image: url("../image/ZenBG-1.png"), url("../image/ZenBG-2.png");
+    background-repeat: repeat-x, repeat;
+    color: rgb(201, 199, 199);
+    position: relative;
+   
+}
