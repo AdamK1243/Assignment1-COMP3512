@@ -1,1 +1,91 @@
-/*First Commit*/
+.home_container{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    
+}
+.homepage_grid{
+    background-color: rgb(53, 55, 57);
+   
+    min-width: 200px;
+    max-height: 650px;
+    padding-left: 2%;
+    padding-right: 2%; 
+    box-shadow: 4px 8px 16px -3px rgba(0,0,0,0.76);
+}
+.homepage_grid > ul > li{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: rgb(2, 24, 20);
+    font-weight: bolder;
+    font-size: medium;
+}
+.homepage_grid a:link{
+    color: white;
+}
+.homepage_grid a:visited{
+    color: mediumslateblue ;
+}
+.homepage_grid a:hover{
+    background-color: black;
+}
+.homepage_grid.top-genres {
+    background-image: url('../image/test01.jpeg');
+    filter: blur(0px); /* Adjust the blur amount as needed */
+}
+.homepage_grid.top-artist {
+    background-image: url('../image/test06.jpeg');
+    filter: blur(0px);
+}
+.homepage_grid.top-songs {
+    background-image: url('../image/test02.webp');
+    filter: blur(0px);
+}
+.homepage_grid.one-hit {
+    background-image: url('../image/test07.jpg');
+    filter: blur(0px);
+}
+.homepage_grid.long {
+    background-image: url('../image/test09.jpeg');
+    filter: blur(0px);
+}
+.homepage_grid.club {
+    background-image: url('../image/test10.jpeg');
+    filter: blur(0px);
+}
+.homepage_grid.run {
+    background-image: url('../image/test11.jpeg');
+    filter: blur(0px);
+
+}
+.homepage_grid.study {
+    background-image: url('../image/test12.jpeg');
+    filter: blur(0px);
+}
+.grid-list {
+    list-style: none;
+}
+.grid-1.blur-item{
+    font-size: 18px; /* Customize the font size for the first grid */
+    color: #060505; /* Customize the color for the first grid */
+    /* Add other styles as needed */
+}
+  
+ 
+
+.blur-text {
+    background-color: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background for better readability */
+    color: rgb(219, 35, 35); /* Adjust text color as needed */
+    padding: 10px; /* Add padding for better text readability */
+}
+
+.Github{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+img{height: 30px; width: 30px; margin-right: -20px;}

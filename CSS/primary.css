@@ -1,0 +1,278 @@
+:root{
+    --Background: #18191A;
+    --HeaderFooter:#2D1D44;
+    --CurrentPage: #810050;
+}
+body{
+    min-width: 100%;
+    position: relative;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  var(--Background);
+    color: white;
+    font-family: Helvetica, Sans-Serif;
+    margin: 0px;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+header{
+    position: fixed;
+    top: 0;
+    background-color: var(--HeaderFooter);
+    margin: 0;
+    width: 100%;
+    padding: 6px;
+}
+header h1, h3{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    color: white;
+}
+header a{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px;
+    border: 1px var(--HeaderFooter);
+    background-color: var(--HeaderFooter);
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    font-size: 12pt;
+    border-radius: 5%;
+}
+
+header a:visited{
+    color: white;
+}
+header a:link{
+    color: white;
+}
+header a:hover{
+    background-color: #7D3C98;
+}
+a.favorites{
+    background-color: var(--CurrentPage);
+}
+a.browser{
+    background-color: var(--CurrentPage);
+}
+a.search{
+    background-color: var(--CurrentPage);
+}
+a.song{
+    background-color: var(--CurrentPage);
+}
+a.home{
+    background-color: var(--CurrentPage);
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--HeaderFooter);
+    color: white;
+    margin: auto;
+
+}
+footer>*{
+    margin-left: 10px;
+}
+.Github{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+footer a{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px;
+    border: 1px var(--HeaderFooter);
+    background-color: var(--HeaderFooter);
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border-radius: 5%;
+}
+footer a:visited{
+    color: white;
+}
+footer a:link{
+    color: white;
+}
+footer a:hover{
+    background-color: #7D3C98;
+}
+
+.content{
+    padding-top: 144px;
+    padding-bottom: 175px;
+}
+tr:nth-child(even) {
+    background-color: rgba(63, 63, 63, 0.35);
+}
+table, td, th {
+    /* border: 1px solid; */
+    padding: 20px;
+    font-size: 1.05rem;
+} 
+table{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+}
+.table_year{
+    width: 60px;
+    margin-left: 3px;
+}
+.home_container{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+.homepage_grid{
+    background-color: rgb(53, 55, 57);
+    min-width: 200px;
+    max-height: 650px;
+    padding-left: 2%;
+    padding-right: 2%; 
+    box-shadow: 4px 8px 16px -3px rgba(0,0,0,0.76);
+}
+.homepage_grid > ul > li{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.homepage_grid a:link{
+    color: white;
+}
+.homepage_grid a:visited{
+    color: mediumslateblue ;
+}
+.homepage_grid a:hover{
+    background-color: black;
+}
+.songInfo{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+.songInfo tr{
+    background-color: var(--Background);
+}
+.songInfo a:hover{
+    background-color: #7D3C98;
+}
+div.progress{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: var(--Background);
+    text-align:center;
+}
+progress{
+    width: 75%;
+}
+.progress label{
+    padding: 40px;
+}
+.Button{
+    background-color: #441D3C;
+    border: #441D3C;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.Button:visited{
+    color: white;
+}
+.Button:hover{
+    background-color: #7D3C98;
+}
+.bars{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content form{
+    width: 40%;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(63, 63, 63, 0.35);
+    box-shadow: inset 14px 11px 24px -8px rgba(0,0,0,0.93);
+    box-shadow: 10px 12px 24px -8px rgba(255,255,255,0.93);
+    border-radius: 10%;
+}
+form #title_text{
+    width: 100%;
+}
+fieldset{
+    border: none;
+}
+.content form div{
+    padding: 10px;
+}
+#submit{
+    box-shadow: 3px 4px 0px 0px #9900ff;
+	background:linear-gradient(to bottom, #b55bff 5%, #952bff 100%);
+	background-color:#9900ff;
+	border-radius:11px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+    
+}
+#submit:hover{
+    background:linear-gradient(to bottom, #c277ff 5%, #a953fe 100%);
+	background-color:#9900ff;
+}
+#submit:active{
+    position:relative;
+	top:1px;
+}
+.submit{
+    text-align: center;
+}
+
+
+
+/* This was generated at https://www.shapedivider.app */
+.custom-shape-divider-top-1666384790 {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1666384790 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 42px;
+    transform: rotateY(180deg);
+}
+.custom-shape-divider-top-1666384790 .shape-fill {
+    fill: var(--HeaderFooter);
+}

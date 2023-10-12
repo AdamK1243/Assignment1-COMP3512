@@ -1,0 +1,74 @@
+/* Style the container for the song list */
+.list {
+    margin: 20px; /* Adjusted margin for spacing */
+}
+
+/* Style the song title and artist name */
+.title {
+    background-color: var(--pink);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px; /* Adjusted margin for spacing */
+}
+
+.title b {
+    font-size: larger;
+    display: inline-block;
+}
+
+/* Style the song details and analysis data */
+p {
+    margin-top: 5px; /* Adjusted margin for spacing */
+}
+
+/* Style the analysis data */
+.data ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0;
+}
+
+.data li {
+    margin-top: 5px; /* Adjusted margin for spacing */
+    background-color: var(--teal);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: inline-block; /* Display li elements in a horizontal line */
+    margin-right: 10px; /* Adjusted margin for spacing between items */
+}
+
+/* Style anchor links within the data */
+.data a {
+    background-color: #e0ded1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px; /* Adjusted margin for spacing between items */
+}
+
+/* Style the progress bar container */
+.progress {
+    margin: 20px auto; /* Centered progress bar */
+    width: 75%;
+    padding: 20px;
+    background-color: var(--Background);
+    text-align: center;
+}
+
+/* Style the progress bar itself */
+progress {
+    width: 100%;
+    height: 20px;
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+}
+
+/* Style the label for the progress bar */
+.progress label {
+    padding: 10px;
+    font-weight: bold;
+    color: var(--pink);
+}
