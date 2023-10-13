@@ -36,13 +36,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <link rel="stylesheet" href="CSS/Homepage.css">
     <link rel="stylesheet" href="CSS/Main.css">
-=======
-    <link rel="stylesheet" href="CSS/Assignment1.css">
-  
->>>>>>> c56f7bf5545efdd9d66cbb949f2bef9d3399223a
     <title>Document</title>
     
 </head>
