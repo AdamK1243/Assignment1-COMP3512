@@ -5,56 +5,36 @@ body {
     background-color: #f8f8f8;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .team-photos {
     display: flex;
-    justify-content: space-around; /* or 'space-between', depending on your design preference */
+    justify-content: space-around; 
     align-items: center;
 }
 
 .team-photos img {
-    width: 45%; /* or whatever size you prefer */
-    height: auto; /* maintain aspect ratio */
-    border-radius: 10px; /* optional, for rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* optional, to add a slight shadow */
+    width: 45%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #about-us {
-    max-width: 1000px; /* adjust as per requirement */
+    max-width: 1000px;
     margin: 50px auto;
     text-align: center;
     padding: 20px;
-    background-color: #fff; /* optional, to add a background color to the section */
-    border-radius: 10px; /* optional, for rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* optional, to add a slight shadow */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #4a4a4a; /* New: Default text color for this section */
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+
+#about-us h1 {
+    color: #d30000; 
+    font-size: 36px;
+}
+
+#about-us p {
+    color: #7f8c8d; 
+    font-size: 18px;
 }

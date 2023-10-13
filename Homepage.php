@@ -32,11 +32,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Homepage.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="CSS/Main.css">
-=======
     <link rel="stylesheet" href="CSS/Assignment1.css">
->>>>>>> d36bf264451493e91581bb7c713e8e88e0a7c3fb
     <title>Document</title>
     
 </head>
@@ -51,7 +47,7 @@
                 <li><img src="icons/home.png" alt="home icon" /><a href="Homepage.php">HOME</a></li>
                 <li><img src="icons/browse.PNG" alt="browse icon" /><a href="browse-search-result.php">BROWSE</a></li>
                 <li><img src="icons/search.PNG" alt="search icon" /><a href="search-page.php">SEARCH</a></li>
-                <li><img src="icons/browse.PNG" alt="browse/search icon" /><a href="browse-search-result.php">About Us</a></li>
+                <li><img src="icons/browse.PNG" alt="browse/search icon" /><a href="About-US.php">About Us</a></li>
             </ul>
     
         </nav>

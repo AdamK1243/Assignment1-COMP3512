@@ -1,36 +1,7 @@
 <?php
-<<<<<<< HEAD
-    require_once('config.inc.php'); 
-    require_once('db-classes.inc.php');
+    require_once('include/config.inc.php'); 
+    require_once('include/db-classes.inc.php');
 
-=======
-    require_once 'Include/config.inc.php';
-    require_once 'Include/db-classes.inc.php';
-    function outputSearchResults($songs, $name, $search){
-        echo "<table>";
-        echo "<tr>";
-        echo "<th>Title</th>";
-        echo "<th>Artist</th>";
-        echo "<th>Year</th>";
-        echo "<th>Genre</th>";
-        echo "<th>Popularity</th>";
-        echo "<th></th>";
-        echo "<th></th>";
-        echo "</tr>";
-        foreach($songs as $s){ ?>
-            <tr>
-                <td class='song-title'><a href='single-song.php?id=<?=$s['song_id']?>'><?=$s['title']?></a></td>
-                <td><?=$s['artist_name']?></td>
-                <td><?=$s['year']?></td>
-                <td><?=$s['genre_name']?></td>
-                <td><?=$s['popularity']?></td>
-                <td><a href='add-to-favorites.php?id=<?=$s['song_id']?>&name=<?=$name?>&<?=$name?>=<?=$search?>' ><button class='button'>Add</button></a></td>
-                <td><a href='single-song.php?id=<?=$s['song_id']?>' class='button'><button>View</button></a></td>
-            </tr>
-        <?php }
-        echo "</table>";
-    } 
->>>>>>> d36bf264451493e91581bb7c713e8e88e0a7c3fb
     try{
         $conn = Databasehelper::createConnection(array(DBCONNSTRING,DBUSER,DBPASS));
         $songGateway = new MusicDB($conn); 
@@ -90,11 +61,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/primary.css">
+    <link rel="stylesheet" href="CSS/Assignment1.css">
+    <link rel="stylesheet" href="CSS/browse-search.css">
     <title>Song browser</title>
 </head>
 <body>
-   <?php include('header.php')?>
+<header class="header">
+        <h1>COMP 3512 Assign1</h1>
+        <h3>Utkarsh Kapoor, Adam Kovacs</h3>
+
+        <nav>
+            <ul>
+                <li><img src="icons/home.png" alt="home icon" /><a href="Homepage.php">HOME</a></li>
+                <li><img src="icons/browse.PNG" alt="browse icon" /><a href="browse-search-result.php">BROWSE</a></li>
+                <li><img src="icons/search.PNG" alt="search icon" /><a href="search-page.php">SEARCH</a></li>
+                <li><img src="icons/browse.PNG" alt="browse/search icon" /><a href="About-US.php">About
+                        Us</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
     <div class="content">
         <table class="browse">
             <tr>
@@ -116,7 +103,7 @@
                     <td><a class="Button" href="addToFavorites.php?AddID=<?=$curr["song_id"]?>">
                         Add to Favorites
                     </a></td>
-                    <td><a class="Button" href="SongInfo.php?curr=si&songID=<?=$curr["song_id"]?>">
+                    <td><a class="Button" href="single-song.php?curr=si&songID=<?=$curr["song_id"]?>">
                         View
                     </a></td>
                 </tr>  
@@ -126,6 +113,13 @@
             ?>
         </table>    
     </div> 
-    <?php include('include/Footer.php')?>
+    <footer>
+        <h4>COMP 3512</h4>
+        <p id="copyright">©Kapoor, Kovas</p>
+        <div class="Github">
+            <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png"
+                        alt="git icon" /></a></li>
+        </div>
+    </footer>
 </body>
 </html>
