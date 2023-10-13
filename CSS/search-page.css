@@ -1,0 +1,39 @@
+li{list-style: none;}
+
+.title, .artist, .genre, .year, .scale{padding: 10px;}
+h2{background-color: var(--pink);}
+
+.btn{
+    margin-top: 30px;
+    padding: 10px 60px;
+}
+
+input, select, option{
+    border-radius: 10px;
+    padding: 10px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 10px 5px var(--teal);
+}
+
+label{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.artist-genre a1 {display:inline-block; padding:20px; margin-bottom:30px;}
+.year, .popularity{padding-top: 30px;}
+main{margin-left: 0px;}
+
+.title input{
+    width: 450px;
+}
+
+.artist-genre label{padding: 20px; margin-bottom:30px;}
+
+footer a{
+    background-color: #e0ded1;
+    padding: 10px;
+    border-radius: 10px;
+}

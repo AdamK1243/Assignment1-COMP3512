@@ -31,9 +31,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Assignment1.css">
     <link rel="stylesheet" href="CSS/Homepage.css">
-  
+    <link rel="stylesheet" href="CSS/Assignment1.css">
     <title>Document</title>
     
 </head>
@@ -121,7 +120,6 @@
         <p id="copyright">©Kapoor, Kovas</p>
         <div class="Github">
             <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src= "icons/git.png" alt= "git icon"/></a></li>
-            <
         </div>
     </footer>
 </body>
