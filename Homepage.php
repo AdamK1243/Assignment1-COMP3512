@@ -32,6 +32,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Assignment1.css">
+    <link rel="stylesheet" href="CSS/Homepage.css">
   
     <title>Document</title>
     
@@ -44,14 +45,16 @@
 
         <nav>
             <ul>
-                <li><img src="icons/home.png" alt="home icon" /><a href="home-page.php">HOME</a></li>
+                <li><img src="icons/home.png" alt="home icon" /><a href="Homepage.php">HOME</a></li>
                 <li><img src="icons/browse.PNG" alt="browse icon" /><a href="browse-search-result.php">BROWSE</a></li>
                 <li><img src="icons/search.PNG" alt="search icon" /><a href="search-page.php">SEARCH</a></li>
                 <li><img src="icons/browse.PNG" alt="browse/search icon" /><a href="browse-search-result.php">About Us</a></li>
             </ul>
+    
         </nav>
     
     </header>
+   
         <div class="content home_container">
             
             <div class="homepage_grid top-genres grid 1"> 
@@ -72,7 +75,7 @@
                 <h1 class="blur-text">Top Songs</h1>
                 <ul>
                 <?php foreach($topSong as $row){
-                        echo "<li><a href='SongInfo.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
+                        echo "<li><a href='single-song.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
                 </ul>
             </div>
             <div class="homepage_grid one-hit">

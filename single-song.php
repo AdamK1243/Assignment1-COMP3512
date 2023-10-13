@@ -20,12 +20,10 @@ try{
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/primary1.css">
+    <link rel="stylesheet" href="CSS/single.css">
     <link rel="stylesheet" href="CSS/Assignment1.css">
-    
     <title>Song Info</title>
 </head>
-
 <body>
 <header class="header">
         <h1>COMP 3512 Assign1</h1>
@@ -33,7 +31,7 @@ try{
 
         <nav>
             <ul>
-                <li><img src="icons/home.png" alt="home icon" /><a href="home-page.php">HOME</a></li>
+                <li><img src="icons/home.png" alt="home icon" /><a href="Homepage.php">HOME</a></li>
                 <li><img src="icons/browse.PNG" alt="browse icon" /><a href="browse-search-result.php">BROWSE</a></li>
                 <li><img src="icons/search.PNG" alt="search icon" /><a href="search-page.php">SEARCH</a></li>
                 <li><img src="icons/browse.PNG" alt="browse/search icon" /><a href="browse-search-result.php">About Us</a></li>
@@ -41,44 +39,37 @@ try{
         </nav>
     
     </header>
-
-
-</div>
-<div class="content">
-        <table class="songInfo"> 
-            <tr>
-                <th>Title</th>
-                <th>Artist</th>
-                <th>Artist Type</th>
-                <th>Genre</th>
-                <th>Year</th>
-                <th>Length</th>
-            </tr>
-                <?php 
-                foreach($song as $row){ 
-                    $length = $row['duration'];
-                    $minutes = number_format($length/60, 0);
-                    $seconds = number_format($length%60);
-                    if ($seconds < 10){
-                        $seconds = "0$seconds";
-                    }
-                    echo "<tr>"; 
-                    echo "<td>" . $row['title']  . ' </td>'; 
-                    echo "<td>" . $row['artist_name']  . ' </td>';  
-                    echo "<td>" . $row['type_name']  . ' </td>';
-                    echo "<td>" . $row['genre_name']  . ' </td>'; 
-                    echo "<td>" . $row['year']  . ' </td>'; 
-                    echo "<td>" . $minutes . ":"  . $seconds . ' </td>';  
-                    echo "</tr>";
-                }
-                ?>
-                
-        </table>
-
-
+    
+<div class= "content">
+<h2>About Song</h2>
+  <div class="vertical-table">
+    <?php foreach ($song as $row) { ?>
+        <div class="table-row">
+            <div class="table-label">Title:</div>
+            <div class="table-data"><?= $row['title'] ?></div>
+        </div>
+        <div class="table-row">
+            <div class="table-label">Artist:</div>
+            <div class="table-data"><?= $row['artist_name'] ?></div>
+        </div>
+        <div class="table-row">
+            <div class="table-label">Artist Type:</div>
+            <div class="table-data"><?= $row['type_name'] ?></div>
+        </div>
+        <div class="table-row">
+            <div class="table-label">Genre:</div>
+            <div class="table-data"><?= $row['genre_name'] ?></div>
+        </div>
+        <div class="table-row">
+            <div class="table-label">Year:</div>
+            <div class="table-data"><?= $row['year'] ?></div>
+        </div>
+    
+    <?php } ?>
+ </div>
  <div class="progress">
                 <?php foreach($song as $row){?> 
-                    <div class="progress-bars">
+                    <div class="bars">
                     <label for="bpm">Beats per minute</label></br>
                     Low <progress min="0" max="300" value="<?= $row['bpm']?>" id="bpm"></progress> High</br>
                     </div>
@@ -111,9 +102,7 @@ try{
                     Low <progress min="0" max="100" value="<?= $row['popularity']?>"></progress> High</br>
                     </div>
                 <?php }?>
-      </div>
- </div>     
-    <?php include('include/Footer.php')?>
+            </div>
+</div>
 
-</body>
 </html>

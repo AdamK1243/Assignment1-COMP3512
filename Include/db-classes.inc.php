@@ -62,11 +62,13 @@ class SongDB{
         $s = Databasehelper::runQuery($this->pdo, $sql, null);
         return $s->fetchAll();
     }
+    
    
+    
     
 }
 class MusicDB{
-    //I should change this later im just lazy 
+
     private static $baseSQL = "SELECT * FROM songs, artists, types, genres WHERE songs.genre_id = genres.genre_id AND artists.artist_type_id = types.type_id AND songs.artist_id = artists.artist_id"; //This will display everything in the database so this should NOT be used without a where statement
 
     public function __construct($connection){
