@@ -79,12 +79,10 @@ try {
             }
             ?>
         </select><br>
-
         <label for="year">Search by Year:</label>
-       <input type="text" id="year" name="year-before-value" title="text-year-before">
-       <input type="number" name="year" id="year_end" placeholder="End Year">
-
-        <input type="submit" value="Search">
+        <input type="number"  name="year_less"  placeholder="Enter year-before">
+         <input type="number" name="year_greater"   placeholder="Enter year-after">
+         <input type="submit" value="Search">
     </form>
 </div>
 

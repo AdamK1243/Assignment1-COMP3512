@@ -30,17 +30,6 @@
             $AddValue[] = (string)$_GET['genre_name'];
         }
     
-        if(!empty($_GET['popu'])){
-            if ($_GET['popu']== "greater"){
-                $Condition .= " AND popularity >= ?";
-                $AddValue[] = $_GET['pop_greater'];
-                
-            }elseif ($_GET['popu']== "less"){
-                $Condition.= " AND popularity < ?";
-                $AddValue[] = $_GET['pop_less'];
-            }
-        }
-
         if(empty($Condition)){
             $songs = $songGateway->getAll();  
         }

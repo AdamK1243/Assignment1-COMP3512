@@ -176,5 +176,6 @@ class Homepage{
         $s = Databasehelper::runQuery($this->pdo, $sql, null);
         return $s->fetchAll();
     }
+    
 }
 ?>
