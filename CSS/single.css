@@ -6,28 +6,28 @@
     text-align: center;
 }
 .content h2 {
-    font-size: 24px; /* Adjust the font size */
-    color:  #AFA797;/* Set the text color */
-    font-weight: bold; /* Make the text bold */
-    margin-bottom: 10px; /* Add spacing below the h2 element */
+    font-size: 24px; 
+    color:  #AFA797;
+    font-weight: bold; 
+    margin-bottom: 10px; 
     text-align: center;
 }
 
 .vertical-table {
-    display: flex; /* Display the table as an inline block */
+    display: flex; 
     border: 10px solid #000000;
     border-radius: 5px;
     padding: 10px;
     background-color: #ba1a1a;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: auto; /* Adjust the width as needed */
-    text-align: center; /* Center-align the entire table */
+    width: auto; 
+    text-align: center; 
 }
 
 .table-row {
     display: flex;
     flex-direction: column;
-    margin-right: 200px; /* Add spacing between table rows */
+    margin-right: 200px; 
     
 }
 
@@ -35,17 +35,17 @@
     font-weight: bold;
     color: #333;
     padding: 5px;
-    text-align: center; /* Center-align text in table cells */
+    text-align: center; 
   
 }
-/* Center the progress container */
+
 .progress-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center; /* Center-align the text within the container */
+    text-align: center; 
   }
   
   

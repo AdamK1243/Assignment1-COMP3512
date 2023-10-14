@@ -1,4 +1,4 @@
-/* Style the table */
+
 .content {
     padding: 20px;
 }
@@ -22,7 +22,7 @@ tr:nth-child(even) {
     background-color: #e94a4a;
 }
 
-/* Style the "Remove All" button */
+
 .Button {
     background-color: #210404;
     color: #fff;
@@ -36,7 +36,7 @@ tr:nth-child(even) {
     background-color: #ff0000;
 }
 
-/* Style the "Remove From Favorites" and "View" buttons */
+
 .Button-Secondary {
     background-color: #4caf50;
     color: #fff;

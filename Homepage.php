@@ -5,22 +5,21 @@
     try{
         $conn = Databasehelper::createConnection(array(DBCONNSTRING,DBUSER,DBPASS));
         $s = new Homepage($conn);
-        //Using the databasehelper to run all the query since it will make this page less crowded.
-        // Top Genres
+        
         $topGenre = $s->getTopGenres();
-        // Top Artists
+      
         $topArtist = $s->getTopArtists();
-        // Most Popular Songs
+        
         $topSong = $s->getTopSongs();
-        // One hit wonders 
+     
         $oneHitWonder = $s->getOneHitWonders();
-        // acousticness
+        
         $acoustic = $s->getLongestAcousticSong();
-        //At the club
+        
         $club = $s->getAtTheClub();
-        //running
+      
         $run = $s->getRunning();
-        //study
+      
         $study = $s->getStudy();
         
     }catch(Exception $e){$e->getMessage();}
@@ -81,35 +80,35 @@
                 <h1 class="blur-text">One Hit Wonders</h1>
                 <ul>
                 <?php foreach($oneHitWonder as $row){
-                        echo "<li><a href='SongInfo.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
+                        echo "<li><a href='single-song.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
                 </ul>
             </div>
             <div class="homepage_grid long ">
                 <h1 class="blur-text">Longest Acoustic Song</h1>
                 <ul>
                 <?php foreach($acoustic as $row){
-                        echo "<li><a href='SongInfo.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
+                        echo "<li><a href='single-song.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
                 </ul>
             </div>
             <div class="homepage_grid club">
                 <h1 class="blur-text">At The Club</h1>
                 <ul>
                 <?php foreach($club as $row){
-                        echo "<li><a href='SongInfo.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
+                        echo "<li><a href='single-song.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
                 </ul>
             </div>
             <div class="homepage_grid run">
                 <h1 class="blur-text">Running songs</h1>
                 <ul>
                 <?php foreach($run as $row){
-                        echo "<li><a href='SongInfo.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
+                        echo "<li><a href='single-song.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
                 </ul> 
             </div>
             <div class="homepage_grid study">
                 <h1 class="blur-text">Study Songs</h1>
                 <ul>
                 <?php foreach($study as $row){
-                        echo "<li><a href='SongInfo.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
+                        echo "<li><a href='single-song.php?curr=si&songID=" . $row['song_id'] . "'>" . $row['title'] . '</a> By ' . $row['artist_name'] . "</li>";}?>
                 </ul>
             </div>
         </div>

@@ -8,7 +8,6 @@
     --font-secondary: 'Courier New', Courier, monospace;
 }
 
-/* Global Styles */
 body {
     font-family: var(--font-primary);
     color: var(--color-text);
@@ -26,7 +25,7 @@ table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
-    border-radius: 10px; /* Add this line to round the table */
+    border-radius: 10px; 
     background-color: #ffcda2;
     background-image: url(../image/giphy\ \(2\).gif);
 }
@@ -35,7 +34,7 @@ th, td {
     padding: 10px;
     border-bottom: 1px solid var(--color-secondary);
     text-align: center;
-    border-radius: 10px; /* Add this line to round the table cells */
+    border-radius: 10px; 
 }
 
 th {
@@ -46,10 +45,10 @@ tr:hover {
     background-color: var(--color-accent);
 }
 
-.button {
-    background-color: var(--color-accent);
+.Button {
+    background-color: white;
     border: none;
-    color: var(--color-bg);
+    color: black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -58,8 +57,34 @@ tr:hover {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
+
+
 }
 
-.button:hover {
+/* Specify the hover effect for the .Button class */
+.Button:hover {
     background-color: var(--color-secondary);
 }
+h1.Search{
+    margin: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: glow 5s ease-in-out infinite alternate;
+    text-align: center;
+    margin-top: 2.5%;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }

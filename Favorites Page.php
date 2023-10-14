@@ -5,6 +5,7 @@ require_once('Include/db-classes.inc.php');
 
 if(!empty($_GET["AddID"])){
     $_SESSION["Song" . $_GET['AddID']] = $_GET["AddID"];
+    $msg = "Added as Favotite!";
 }
 // Handle song removal from favorites
 if (!empty($_GET["RemID"])) {
@@ -62,6 +63,8 @@ try {
     
     </header>
     <div class="content">
+    <div class="message"><?php echo $msg ?></div>
+
         <table>
             <tr>
                 <th>Title</th>

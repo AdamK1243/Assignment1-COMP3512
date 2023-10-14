@@ -44,7 +44,7 @@
 
 .homepage_grid.top-genres {
     background-image: url('../image/test12.jpeg');
-    filter: blur(0px); /* Adjust the blur amount as needed */
+    filter: blur(0px); 
     border: 5px solid #D8BCAB;
 }
 .homepage_grid.top-artist {
@@ -87,14 +87,14 @@
     list-style: none;
 }
 .grid-1.blur-item{
-    font-size: 18px; /* Customize the font size for the first grid */
-    color: #060505; /* Customize the color for the first grid */
-    /* Add other styles as needed */
+    font-size: 18px; 
+    color: #060505; 
+    
 }
 .blur-text {
-    background-color: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background for better readability */
-    color: #EB9C5C; /* Adjust text color as needed */
-    padding: 10px; /* Add padding for better text readability */
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #EB9C5C; 
+    padding: 10px; 
 }
 
 .Github{

@@ -54,11 +54,7 @@ class SongDB{
     public function __construct($connection){
         $this->pdo = $connection;
     }
-    //public function getAll1(){
-        //$sql = self::$baseSQL . " INNER JOIN artists ORDER BY artist_id";
-        //$s = Databasehelper::runQuery($this->pdo, $sql, null);
-        //return $s->fetchAll();
-    //}
+    
     public function getAll() {
         $sql = self::$baseSQL . " ORDER BY title";
         $s = Databasehelper::runQuery($this->pdo, $sql, null);
@@ -83,37 +79,6 @@ class SongDB{
     }
 }
     
-   
-    
-    
-//class MusicDB {
-    //private static $baseSQL = "SELECT * FROM songs, artists, types, genres WHERE songs.genre_id = genres.genre_id AND artists.artist_type_id = types.type_id AND songs.artist_id = artists.artist_id";
-
-    //private $pdo;
-
-    //public function __construct($connection) {
-        //$this->pdo = $connection; 
-   //}
-    //public function getAll() {
-        //$sql = self::$baseSQL . " ORDER BY title";
-        //$s = Databasehelper::runQuery($this->pdo, $sql, null);
-        //return $s->fetchAll();
-   // }
-
-    //public function getConditions($sqlStr, $valueArray) {
-       // $sql = self::$baseSQL . $sqlStr; // Remove extra space before $sqlStr
-        //$s = Databasehelper::runQuery($this->pdo, $sql, $valueArray);
-        //return $s->fetchAll();
-    //}
-
-    //public function getSong($song_id) {
-       // $sql = self::$baseSQL . " AND songs.song_id=?";
-        //$s = Databasehelper::runQuery($this->pdo, $sql, array($song_id));
-        //return $s->fetchAll();
-    //}
-//}
-
-
 class GenreDB{
     private static $baseSQL = "SELECT * FROM genres order by genre_id";
 

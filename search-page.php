@@ -81,8 +81,8 @@ try {
         </select><br>
 
         <label for="year">Search by Year:</label>
-        <input type="number" name="year_start" id="year_start" placeholder="Start Year">
-        <input type="number" name="year_end" id="year_end" placeholder="End Year"><br>
+       <input type="text" id="year" name="year-before-value" title="text-year-before">
+       <input type="number" name="year" id="year_end" placeholder="End Year">
 
         <input type="submit" value="Search">
     </form>

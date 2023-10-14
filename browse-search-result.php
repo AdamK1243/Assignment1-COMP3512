@@ -78,7 +78,9 @@ catch(Exception $e){$e->getMessage();}
         </nav>
 
     </header>
+    <h1 class="Search"> Music Collection </h1>
     <div class="content">
+
         <table class="browse">
             <tr>
                 <th>Title</th>
@@ -88,24 +90,24 @@ catch(Exception $e){$e->getMessage();}
                 <th>Popularity</th>
             </tr>
             <?php
-            foreach($songs as $curr){
+            foreach($songs as $s){
                 ?>
                 <tr>
-                    <td><?=$curr['title']?></td>
-                    <td><?=$curr['artist_name']?></td>
-                    <td class="table_year"><?=$curr['year']?></td>
-                    <td><?=$curr['genre_name']?></td>
-                    <td><?=$curr['popularity']?></td>
-                    <td><a class="Button" href="Favorites Page.php?AddID=<?=$curr["song_id"]?>">
+                    <td><?=$s['title']?></td>
+                    <td><?=$s['artist_name']?></td>
+                    <td class="table_year"><?=$s['year']?></td>
+                    <td><?=$s['genre_name']?></td>
+                    <td><?=$s['popularity']?></td>
+                    <td><a class="Button" href="Favorites Page.php?AddID=<?=$s["song_id"]?>">
                         Add to Favorites
                     </a></td>
-                    <td><a class="Button" href="single-song.php?curr=si&songID=<?=$curr["song_id"]?>">
+                    <td><a class="Button" href="single-song.php?curr=si&songID=<?=$s["song_id"]?>">
                         View
                     </a></td>
                 </tr>  
                 <?php
             }
-            
+        
             ?>
         </table>    
     </div> 
