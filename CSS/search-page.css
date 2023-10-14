@@ -1,76 +1,98 @@
-
+/* Style the main container */
+/* Style the main container */
 .main-container {
-    background-image: url('../image/test12.jpeg');
+    background-image: url('../image/giphy\ \(1\).gif');
     background-size: cover;
-    height: 650px; 
+    height: 650px;
     background-repeat: no-repeat;
-    padding: 20px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
-    margin-top: 50px;  
-    margin-left: auto;  
-    margin-right: auto;  
-    width: 80%;  /* Controls the width of the wooden box */
-    border-radius: 10px;  
-    text-align: center; 
-    display: flex; 
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(255, 253, 253, 0.397);
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 5px solid #D8BCAB;
+    margin-top: 2.5%;
 }
-fieldset {
-    border: none;
+
+/* Style the form container */
+.main.form {
+    text-align: left; 
+    backdrop-filter: blur(15px);/* Align text to the left within the form */
 }
+
+/* Style labels for form elements */
 label {
-    font-size: 18px; 
-    text-align: center; 
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+   color: #e38e17;
+
+   
 }
-/* Enlarge search boxes */
-input[type="text"], select, input[type="number"] {
+
+/* Style input fields and select elements */
+input[type="text"],
+select,
+input[type="number"] {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
     font-size: 16px;
     border-radius: 5px;
-    border: 2px solid #87ceeb;
-    margin-top: 20px;
+    border: 2px solid #fe8e2d;;
+    background-color: #ffffff;
+    align-items: center;
 }
 
-/* Enlarge radio buttons and adjust associated text */
-input[type="radio"] {
-    transform: scale(1.5);
-}
-input[type="radio"] + label {
-    font-size: 18px; 
-}
-#year_radio, #pop_radio {
-    display: flex;
-    align-items: center;
-    gap: 10px;  
-}
-/* Adjustments for submit button */
+
+
+/* Style the search button */
 input[type="submit"] {
     width: 150px;
     padding: 12px;
     font-size: 16px;
-    background-color: #87ceeb;
+    background-color: #ffcda2;
     border: none;
     border-radius: 5px;
     color: #042a2b;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 0 auto; /* Center horizontally */
+    display: block;
 }
-
 input[type="submit"]:hover {
     background-color: #06a77d;
+    align-items: center;
 }
 
-.search-results ul {
-    list-style: none;
-    padding: 0;
-    text-align: center; 
-}
 
-.search-results li {
-    margin-bottom: 15px;
-}
+h1.Search{
+    margin: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: glow 5s ease-in-out infinite alternate;
+    text-align: center;
+    margin-top: 2.5%;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }

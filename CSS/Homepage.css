@@ -6,6 +6,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 50px;
+    margin-top: 5%;
     
 }
 .homepage_grid{

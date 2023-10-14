@@ -64,13 +64,12 @@ header {
     color: #87ceeb;
     padding: 5px 0; /* Reduce the top and bottom padding */
     text-shadow: 2px 2px 4px rgba(43, 74, 56, 0.8);
-    font-size: 18px; /* Adjust the font size to make it smaller */
+    font-size: 20px; /* Adjust the font size to make it smaller */
     background-color: #042a2b;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px; /* Reduce the space between the header and content */
     border: 5px solid #ffcda2; /* Reduce the border size */
-    animation: fadeIn 2.5s ease-in forwards;
     border-radius: 10px;
 }
 header a:visited{
@@ -83,14 +82,41 @@ header a:hover{
     background-color: #7D3C98;
     
 }
-h1{
-    color: #87ceeb;
-    
-}
+H1.home{
+    margin: 0;
+    padding-bottom: 1px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+  }
+
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
+
+
 
 h3{
     color: #06a77d;
 }
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
 @keyframes fadeIn {
     0% {
         color: transparent; /* Make the text transparent at the start */

@@ -4,55 +4,51 @@
 
     try{
         $conn = Databasehelper::createConnection(array(DBCONNSTRING,DBUSER,DBPASS));
-        $songGateway = new MusicDB($conn); 
-        $AddSQL = "";
+        $songGateway = new SongDB($conn); 
+
+            $Condition= "";
         if(!empty($_GET['title'])){
-            $AddSQL .= " AND title LIKE ?";
+            $Condition .= " AND title LIKE ?";
             $AddValue[] = "%".$_GET['title']."%";
         }
         if(!empty($_GET['artist'])){
-            $AddSQL  .= " AND artist_name LIKE ?";
+            $Condition .= " AND artist_name LIKE ?";
             $AddValue[] = $_GET['artist'];
         }
-        /* if(!empty($_GET['year'])){
-            $AddSQL[] = " year = ?";
-            $AddValue[] = $_GET['year'];
-        } */
+    
         if(!empty($_GET['year'])){
             if ($_GET['year']== "less"){
-                $AddSQL= " AND year <= ?";
+                $Condition= " AND year <= ?";
                 $AddValue[] = $_GET['year_less'];
             }elseif($_GET['year']== "greater"){
-                $AddSQL  .= " AND year >= ?";
+                $Condition  .= " AND year >= ?";
                 $AddValue[] = $_GET['year_greater'];
             }
         }
         if(!empty($_GET['genre_name'])){
-            $AddSQL .= " AND genre_name LIKE ?";
+            $Condition .= " AND genre_name LIKE ?";
             $AddValue[] = (string)$_GET['genre_name'];
         }
-        /* if(!empty($_GET['popularity'])){
-            $AddSQL[] = " popularity LIKE ?";
-            $AddValue[] = $_GET['popularity'];
-        } */
+    
         if(!empty($_GET['popu'])){
             if ($_GET['popu']== "greater"){
-                $AddSQL .= " AND popularity >= ?";
+                $Condition .= " AND popularity >= ?";
                 $AddValue[] = $_GET['pop_greater'];
                 
             }elseif ($_GET['popu']== "less"){
-                $AddSQL .= " AND popularity < ?";
+                $Condition.= " AND popularity < ?";
                 $AddValue[] = $_GET['pop_less'];
             }
         }
 
-        if(empty($AddSQL)){
+        if(empty($Condition)){
             $songs = $songGateway->getAll();  
         }
         else{
-            $songs = $songGateway->getConditions($AddSQL, $AddValue);
+            $songs = $songGateway->getConditions($Condition, $AddValue);
         }
-    }catch(Exception $e){$e->getMessage();}
+    }
+catch(Exception $e){$e->getMessage();}
 ?>
 
 <!DOCTYPE html>
@@ -100,7 +96,7 @@
                     <td class="table_year"><?=$curr['year']?></td>
                     <td><?=$curr['genre_name']?></td>
                     <td><?=$curr['popularity']?></td>
-                    <td><a class="Button" href="addToFavorites.php?AddID=<?=$curr["song_id"]?>">
+                    <td><a class="Button" href="Favorites Page.php?AddID=<?=$curr["song_id"]?>">
                         Add to Favorites
                     </a></td>
                     <td><a class="Button" href="single-song.php?curr=si&songID=<?=$curr["song_id"]?>">

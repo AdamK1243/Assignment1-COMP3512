@@ -43,79 +43,61 @@ try {
         </nav>
 
     </header>
-    <div class="main-container">
-        <div class="content">
-            <form action="browse-search-result.php" method="GET">
-                <div id="title" class="title">
-                    <input type="radio" id="title" name="main" value="Title">
-                    <label for="title">Title</label></br>
-                    <input type="text" name="title" id="title_text">
-                    <!-- the query string will show up with the name of each of the input fields-->
-                </div>
-                <div id="artist" class="artist">
-                    <input type="radio" name="main" value="Artist" id="artist">
-                    <label for="artist">Artist</label></br>
-                    <select name="artist">
-                        <option value="" disabled selected>Select your option</option>
-                        <?php foreach ($artist as $row) { ?>
-                            <option>
-                                <?= $row['artist_name'] //this is putting all the artists into a drop down menu?>
-                            </option>
-                        <?php } ?>
-                    </select>
-                </div>
-                <div id="genre">
-                    <input type="radio" name="main" value="Genre" id="genre">
-                    <label for="genre">Genre</label></br>
-                    <select name="genre_name">
-                        <option value="" disabled selected>Select your option</option>
-                        <?php foreach ($genre as $row) { ?>
-                            <option>
-                                <?= $row['genre_name'] //this is putting all the genres into a drop down menu?>
-                            </option>
-                        <?php } ?>
-                    </select>
-                </div>
-                <div id="year">
-                    <input type="radio" name="main" value="Year" id="year">
-                    <label for="year">Year</label></br>
-                    <fieldset id="year_radio">
-                        <!--<input type="radio" name="year" value="greater" id="greater">-->
-                        <label for="greater">Greater</label>
-                        <input type="number" name="year_greater" min="2016" max="2018">
-                        </br></br>
-                        <!--<input type="radio" name="year" value="less" id="less">-->
-                        <label for="less">Less</label>
-                        <input type="number" name="year_less" min="2016" max="2018">
-                    </fieldset>
-                </div>
-                <div id="popularity">
-                    <input type="radio" name="main" value="Popularity" id="popularity">
-                    <label for="popularity">Popularity</label>
-                    <fieldset id="pop_radio">
-                        <!--<input type="radio" value="greater" id="greater" name="popu">-->
-                        <label for="greater">Greater</label>
-                        <input type="number" name="pop_greater" min="0" max="100">
-                        </br></br>
-                         <!--<input type="radio" value="less" id="less" name="popu">-->
-                        <label for="less">Less</label>
-                        <input type="number" name="pop_less" min="0" max="100">
-                    </fieldset>
-                </div>
-                <div class="submit">
-                    <input type="submit" id="submit">
-                </div>
+    
+    
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Search</title>
+</head>
+<h1 class="Search">
+    Search Your Music! </h1>
+<body>
+<div class="main-container">
+    
+    <form method="GET" class="main form" action="browse-search-result.php">
+        <label for="title">Search by Title:</label>
+        <input type="text" name="title" id="title" placeholder="Enter title"><br>
 
-            </form>
-        </div>
+        <label for="artist">Search by Artist:</label>
+        <select name="artist" id="artist">
+            <option value="" disabled selected>Select artist</option>
+            <?php
+            foreach ($artist as $artists) {
+                echo "<option>" . $artists['artist_name'] . "</option>";
+            }
+            ?>
+        </select><br>
+
+        <label for="genre">Search by Genre:</label>
+        <select name="genre_name" id="genre">
+            <option value="" disabled selected>Select genre</option>
+            <?php
+            foreach ($genre as $genres) {
+                echo "<option>" . $genres['genre_name'] . "</option>";
+            }
+            ?>
+        </select><br>
+
+        <label for="year">Search by Year:</label>
+        <input type="number" name="year_start" id="year_start" placeholder="Start Year">
+        <input type="number" name="year_end" id="year_end" placeholder="End Year"><br>
+
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+<footer>
+    <h4>COMP 3512</h4>
+    <p id="copyright">©Kapoor, Kovas</p>
+    <div class="Github">
+        <a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png" alt="git icon" /></a>
     </div>
-    <footer>
-        <h4>COMP 3512</h4>
-        <p id="copyright">©Kapoor, Kovas</p>
-        <div class="Github">
-            <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png"
-                        alt="git icon" /></a></li>
-        </div>
+</footer>
+</body>
+</html>
+
     </footer>
 </body>
 

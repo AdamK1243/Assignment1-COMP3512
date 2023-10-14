@@ -1,0 +1,51 @@
+/* Style the table */
+.content {
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #c11d1d;
+}
+
+tr:nth-child(even) {
+    background-color: #e94a4a;
+}
+
+/* Style the "Remove All" button */
+.Button {
+    background-color: #210404;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.Button:hover {
+    background-color: #ff0000;
+}
+
+/* Style the "Remove From Favorites" and "View" buttons */
+.Button-Secondary {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.Button-Secondary:hover {
+    background-color: #45a049;
+}

@@ -3,7 +3,7 @@ require_once('Include/config.inc.php');
 require_once('Include/db-classes.inc.php');
 try{
     $conn = Databasehelper::createConnection(array(DBCONNSTRING,DBUSER,DBPASS));
-    $musicGateway = new MusicDB($conn);
+    $musicGateway = new SongDB($conn);
     
     if(!empty($_GET['songID'])){
         $song = $musicGateway->getSong($_GET['songID']);
