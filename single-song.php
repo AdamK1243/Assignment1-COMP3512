@@ -45,6 +45,12 @@ try{
 <h2>About Song</h2>
   <div class="vertical-table">
     <?php foreach ($song as $row) { ?>
+       <? $length = $row['duration'];
+                    $minutes = number_format($length/60, 0);
+                    $seconds = number_format($length%60);
+                    if ($seconds < 10){
+                        $seconds = "0$seconds";
+                    }?>
         <div class="table-row">
             <div class="table-label">Title:</div>
             <div class="table-data"><?= $row['title'] ?></div>
@@ -64,6 +70,10 @@ try{
         <div class="table-row">
             <div class="table-label">Year:</div>
             <div class="table-data"><?= $row['year'] ?></div>
+        </div>
+        <div class="table-row">
+            <div class="table-label">Time:</div>
+            <div class="table-data"><?= $minutes . ":"  . $seconds ?></div>
         </div>
     
     <?php } ?>
