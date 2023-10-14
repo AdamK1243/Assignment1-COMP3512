@@ -21,8 +21,8 @@
                 <li><img src="icons/home.png" alt="home icon" /><a href="Homepage.php">HOME</a></li>
                 <li><img src="icons/browse.PNG" alt="browse icon" /><a href="browse-search-result.php">BROWSE</a></li>
                 <li><img src="icons/search.PNG" alt="search icon" /><a href="search-page.php">SEARCH</a></li>
-                <li><img src="icons/browse.PNG" alt="browse/search icon" /><a href="About-US.php">About
-                        Us</a></li>
+                <li><img src="icons/fav.PNG" alt="fav icon" /><a href="Favourite-Page.php">Favourites</a></li>
+                <li><img src="icons/About-Us.PNG" alt="browse/search icon" /><a href="About-US.php">About Us</a></li>
             </ul>
 
         </nav>
@@ -31,7 +31,7 @@
 
     <section id="about-us">
         <h1>About Us</h1>
-        <p>Welcome to Comp 3512 Music, where our harmonious journey from 2016 to 2020 crafted a symphony of creating and celebrating diverse music. Join us to explore, create, and revel in a universe where every note tells a unique story.</p>
+        <p>Welcome to Comp 3512 Music, where we create this website for user to search through a music data base to pick out their favourite sounds from the years 2016-2020. Please enjoy and listen on.</p>
         <div class="team-photos">
             <img src="image/Utkarsh.jpg" alt="Photo of Utkarsh">
             <img src="image/Adam.jpg" alt="Photo of Adam">
@@ -40,7 +40,7 @@
 
     <footer>
         <h4>COMP 3512</h4>
-        <p id="copyright">©Kapoor, Kovas</p>
+        <p id="copyright">©Kapoor, Kovacs</p>
         <div class="Github">
             <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png"
                         alt="git icon" /></a></li>

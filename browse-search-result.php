@@ -71,8 +71,8 @@ catch(Exception $e){$e->getMessage();}
                 <li><img src="icons/home.png" alt="home icon" /><a href="Homepage.php">HOME</a></li>
                 <li><img src="icons/browse.PNG" alt="browse icon" /><a href="browse-search-result.php">BROWSE</a></li>
                 <li><img src="icons/search.PNG" alt="search icon" /><a href="search-page.php">SEARCH</a></li>
-                <li><img src="icons/browse.PNG" alt="browse/search icon" /><a href="About-US.php">About
-                        Us</a></li>
+                <li><img src="icons/fav.PNG" alt="fav icon" /><a href="Favourite-Page.php">Favourites</a></li>
+                <li><img src="icons/About-Us.PNG" alt="browse/search icon" /><a href="About-US.php">About Us</a></li>
             </ul>
 
         </nav>
@@ -98,7 +98,7 @@ catch(Exception $e){$e->getMessage();}
                     <td class="table_year"><?=$s['year']?></td>
                     <td><?=$s['genre_name']?></td>
                     <td><?=$s['popularity']?></td>
-                    <td><a class="Button" href="Favorites Page.php?AddID=<?=$s["song_id"]?>">
+                    <td><a class="Button" href="Favourite-Page.php?AddID=<?=$s["song_id"]?>">
                         Add to Favorites
                     </a></td>
                     <td><a class="Button" href="single-song.php?curr=si&songID=<?=$s["song_id"]?>">
@@ -113,7 +113,7 @@ catch(Exception $e){$e->getMessage();}
     </div> 
     <footer>
         <h4>COMP 3512</h4>
-        <p id="copyright">©Kapoor, Kovas</p>
+        <p id="copyright">©Kapoor, Kovacs</p>
         <div class="Github">
             <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png"
                         alt="git icon" /></a></li>

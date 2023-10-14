@@ -56,7 +56,8 @@ try {
                 <li><img src="icons/home.png" alt="home icon" /><a href="Homepage.php">HOME</a></li>
                 <li><img src="icons/browse.PNG" alt="browse icon" /><a href="browse-search-result.php">BROWSE</a></li>
                 <li><img src="icons/search.PNG" alt="search icon" /><a href="search-page.php">SEARCH</a></li>
-                <li><img src="icons/browse.PNG" alt="browse/search icon" /><a href="About-US.php">About Us</a></li>
+                <li><img src="icons/fav.PNG" alt="fav icon" /><a href="Favourite-Page.php">Favourites</a></li>
+                <li><img src="icons/About-Us.PNG" alt="browse/search icon" /><a href="About-US.php">About Us</a></li>
             </ul>
     
         </nav>
@@ -72,7 +73,7 @@ try {
                 <th>Year</th>
                 <th>Genre</th>
                 <th>Popularity</th>
-                <th><a href="Favorites Page.php?RemAll=yes" class="Button">Remove All</a></th>
+                <th><a href="Favourite-Page.php?RemAll=yes" class="Button">Remove All</a></th>
             </tr>
             <?php
             if (!empty($songs)) {
@@ -84,7 +85,7 @@ try {
                         <td class="table_year"><?=$curr['year']?></td>
                         <td><?=$curr['genre_name']?></td>
                         <td><?=$curr['popularity']?></td>
-                        <td><a class="Button" href="Favorites Page.php?RemID=<?=$curr["song_id"]?>&curr=f">
+                        <td><a class="Button" href="Favourite-Page.php?RemID=<?=$curr["song_id"]?>&curr=f">
                             Remove From Favorites
                         </a></td>
                         <td><a class="Button" href="single-song.php?curr=si&songID=<?=$curr["song_id"]?>">
@@ -97,6 +98,13 @@ try {
             ?>
         </table>
     </div>
-   
+    <footer>
+        <h4>COMP 3512</h4>
+        <p id="copyright">©Kapoor, Kovacs</p>
+        <div class="Github">
+            <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png"
+                        alt="git icon" /></a></li>
+        </div>
+    </footer>
 </body>
 </html>

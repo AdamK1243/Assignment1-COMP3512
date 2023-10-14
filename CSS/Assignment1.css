@@ -107,3 +107,51 @@ h3{
         color: #87ceeb;
     }
 }img{height: 30px; width: 30px; margin-right: -20px;}
+footer {
+    margin-top: 50px;
+    background-color: #042a2b; 
+    color: white; 
+    padding: 20px;
+    text-align: center; 
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); 
+    border-top: 1px solid #ccc; 
+    overflow: hidden; 
+}
+
+footer h4 {
+    color: #87ceeb; 
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+footer p {
+    margin: 5px 0; 
+}
+
+footer .Github {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Setting to a flex container */
+    justify-content: center;  /* Horizontally centering child elements (flex items) */
+}
+
+footer .Github li {
+    /* Ensuring no list-style and centering content */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .Github li a img {
+    width: 30px;
+    height: 30px;
+    display: block;  /* Making sure it's a block element */
+    margin: 0 auto;  /* Centering horizontally */
+}
+
+
+
+
+
+
