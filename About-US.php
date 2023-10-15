@@ -29,21 +29,36 @@
 
     </header>
 
-    <section id="about-us">
+    <div class="about-us">
         <h1>About Us</h1>
-        <p>Welcome to Comp 3512 Music, where we create this website for user to search through a music data base to pick out their favourite sounds from the years 2016-2020. Please enjoy and listen on.</p>
-        <div class="team-photos">
-            <img src="image/Utkarsh.jpg" alt="Photo of Utkarsh">
-            <img src="image/Adam.jpg" alt="Photo of Adam">
-        </div>
-    </section>
+        <p>To create our website, which was specifically designed for the COMP 3512 course, we used a combination of HTML, CSS, and PHP. This website allows users to browse a music collection and access detailed data analysis for each song in the collection.</p>
+        
+    </div>
+    <div class="image">
+        <img class="gif"src="image/giphy (3).gif" alt="Giphy GIF">
+    </div>
+    <div class="column">
+            <h2>Group Members</h2>
+            <ul>
+                <li>Adam Kovacs - <a class="box-link"href="https://github.com/AdamK1243">GitHub Profile</a></li>
+                <li>Utkarsh Kapoor - <a class="box-link"href="https://github.com/utkarshk9">GitHub Profile</a></li>
+            </ul>
+    </div>
 
+            <div class="column1">
+            <h2>GitHub Repository</h2>
+            <p><a class="box-link"href="https://github.com/AdamK1243/Assignment1-COMP3512.git">GitHub Repository Link</a></p>
+            </div>
+        
+    </div>
     <footer>
         <h4>COMP 3512</h4>
         <p id="copyright">©Kapoor, Kovacs</p>
-        <div class="Github">
-            <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png"
-                        alt="git icon" /></a></li>
+        <div class="info">
+            <a href="https://github.com/AdamK1243/Assignment1-COMP3512.git">Repository</a>
+            <a href="https://github.com/AdamK1243">Adam's github</a>
+            <a href="https://github.com/utkarshk9">Utkarsh's github</a>
+        </div>
         </div>
     </footer>
 </body>

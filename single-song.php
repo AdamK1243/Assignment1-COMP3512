@@ -14,6 +14,7 @@ try{
     }catch(Exception $e){$e->getMessage();}
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,15 +43,13 @@ try{
     </header>
     
 <div class= "content">
-<h2>About Song</h2>
+<h2 class="About">About Song</h2>
   <div class="vertical-table">
-    <?php foreach ($song as $row) { ?>
-       <? $length = $row['duration'];
-                    $minutes = number_format($length/60, 0);
-                    $seconds = number_format($length%60);
-                    if ($seconds < 10){
-                        $seconds = "0$seconds";
-                    }?>
+    <?php foreach ($song as $row) {
+         $length = $row['duration'];
+         $min = floor($length / 60);
+         $sec = $length % 60;
+         $f= ($min.":".$sec);?>
         <div class="table-row">
             <div class="table-label">Title:</div>
             <div class="table-data"><?= $row['title'] ?></div>
@@ -73,7 +72,7 @@ try{
         </div>
         <div class="table-row">
             <div class="table-label">Time:</div>
-            <div class="table-data"><?= $minutes . ":"  . $seconds ?></div>
+            <div class="table-data"><?= $f;?></div>
         </div>
     
     <?php } ?>
@@ -115,5 +114,15 @@ try{
                 <?php }?>
             </div>
 </div>
+<footer>
+        <h4>COMP 3512</h4>
+        <p id="copyright">©Kapoor, Kovacs</p>
+        <div class="info">
+            <a href="https://github.com/AdamK1243/Assignment1-COMP3512.git">Repository</a>
+            <a href="https://github.com/AdamK1243">Adam's github</a>
+            <a href="https://github.com/utkarshk9">Utkarsh's github</a>
+        </div>
+        </div>
+    </footer>
 
 </html>

@@ -49,7 +49,7 @@ try {
 <body>
 <header class="header">
         <h1>COMP 3512 Assign1</h1>
-        <h3>Utkarsh Kapoor, Adam Kovas</h3>
+        <h3>Utkarsh Kapoor, Adam Kovacs</h3>
 
         <nav>
             <ul>
@@ -97,13 +97,18 @@ try {
             }
             ?>
         </table>
+        </div>
+        <div class="image">
+        <img class="gif"src="image/giphy.gif" alt="Giphy GIF">
     </div>
     <footer>
         <h4>COMP 3512</h4>
         <p id="copyright">©Kapoor, Kovacs</p>
-        <div class="Github">
-            <li><a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png"
-                        alt="git icon" /></a></li>
+        <div class="info">
+            <a href="https://github.com/AdamK1243/Assignment1-COMP3512.git">Repository</a>
+            <a href="https://github.com/AdamK1243">Adam's github</a>
+            <a href="https://github.com/utkarshk9">Utkarsh's github</a>
+        </div>
         </div>
     </footer>
 </body>

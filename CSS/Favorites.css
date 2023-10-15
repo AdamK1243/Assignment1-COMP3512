@@ -49,3 +49,16 @@ tr:nth-child(even) {
 .Button-Secondary:hover {
     background-color: #45a049;
 }
+.image{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 0%;
+
+}
+.gif {
+    width: 500px; 
+    height: auto; 
+    border: #000000 solid 10px;
+    
+}

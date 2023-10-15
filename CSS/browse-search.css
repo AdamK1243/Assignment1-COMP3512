@@ -61,7 +61,7 @@ tr:hover {
 
 }
 
-/* Specify the hover effect for the .Button class */
+
 .Button:hover {
     background-color: var(--color-secondary);
 }

@@ -36,7 +36,7 @@ try {
                 <li><img src="icons/home.png" alt="home icon" /><a href="Homepage.php">HOME</a></li>
                 <li><img src="icons/browse.PNG" alt="browse icon" /><a href="browse-search-result.php">BROWSE</a></li>
                 <li><img src="icons/search.PNG" alt="search icon" /><a href="search-page.php">SEARCH</a></li>
-                <<li><img src="icons/fav.PNG" alt="fav icon" /><a href="Favourite-Page.php">Favourites</a></li>
+                <li><img src="icons/fav.PNG" alt="fav icon" /><a href="Favourite-Page.php">Favourites</a></li>
                 <li><img src="icons/About-Us.PNG" alt="browse/search icon" /><a href="About-US.php">About Us</a></li>
             </ul>
 
@@ -89,20 +89,21 @@ try {
                     <input type="submit" value="Search">
                 </form>
             </div>
-
             <footer>
-                <h4>COMP 3512</h4>
-                <p id="copyright">©Kapoor, Kovacs</p>
-                <div class="Github">
-                    <a href="https://github.com/AdamK1243/Assignment1-COMP3512"><img src="icons/git.png"
-                            alt="git icon" /></a>
-                </div>
-            </footer>
+        <h4>COMP 3512</h4>
+        <p id="copyright">©Kapoor, Kovacs</p>
+        <div class="info">
+            <a href="https://github.com/AdamK1243/Assignment1-COMP3512.git">Repository</a>
+            <a href="https://github.com/AdamK1243">Adam's github</a>
+            <a href="https://github.com/utkarshk9">Utkarsh's github</a>
+        </div>
+        </div>
+    </footer>
+            
+            
         </body>
 
         </html>
 
-        </footer>
-    </body>
-
-</html>
+        
+  
